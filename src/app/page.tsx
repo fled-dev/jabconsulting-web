@@ -3,6 +3,7 @@ import Intro from "@/components/sections/Intro";
 import About from "@/components/sections/About";
 import Services from "@/components/sections/Services";
 import Qualities from "@/components/sections/Qualities";
+import Contact from "@/components/sections/Contact";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <About />
       <Services />
       <Qualities />
+      <Contact />
     </main>
   );
 }
