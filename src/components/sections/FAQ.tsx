@@ -98,7 +98,7 @@ export default function FAQ() {
     {
       question: "Wie kann ich Kontakt zu JAB Consulting aufnehmen?",
       answer:
-        "Sie können uns per E-Mail unter sven-joachim.otto@jab.consulting oder telefonisch unter 0211-159232-0 erreichen. Das Büro befindet sich in der Roßstraße 92, 40479 Düsseldorf, Deutschland.",
+        "Sie können uns per E-Mail unter sven-joachim.otto@jab.consulting oder telefonisch unter +49 211-159232-0 erreichen. Das Büro befindet sich in der Roßstraße 92, 40476 Düsseldorf, Deutschland.",
     },
   ];
 
