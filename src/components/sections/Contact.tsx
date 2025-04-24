@@ -39,7 +39,7 @@ export default function Contact() {
             </p>
 
             {/* Contact card */}
-            <div className="bg-white dark:bg-gray-800/50 rounded-lg p-8 shadow-sm border border-gray-100 dark:border-gray-700/50 mb-8">
+            <div className="bg-white dark:bg-gray-800/50 rounded-lg p-8 shadow-[0_4px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100/80 dark:border-gray-700/30 mb-8">
               <div className="flex flex-col items-center">
                 {/* Email contact */}
                 <div className="text-center">
@@ -55,7 +55,7 @@ export default function Contact() {
                   </p>
                   <a
                     href="mailto:sven-joachim.otto@jab.consulting"
-                    className="inline-flex items-center px-6 py-3 bg-primary hover:bg-primary text-white font-medium rounded-lg shadow-sm hover:shadow transform transition-all duration-300 hover:translate-y-[-2px] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+                    className="inline-flex items-center px-6 py-3 bg-primary hover:bg-primary text-white font-medium rounded-lg shadow-[0_3px_8px_-2px_rgba(0,0,0,0.12)] hover:shadow-[0_6px_15px_-3px_rgba(0,0,0,0.15)] transform transition-all duration-300 hover:translate-y-[-2px] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900"
                   >
                     <EnvelopeSimple size={20} weight="bold" className="mr-2" />
                     E-Mail schreiben

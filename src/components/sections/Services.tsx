@@ -24,7 +24,7 @@ const ServiceCard = ({ title, description, icon, delay }: ServiceCardProps) => (
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: "-50px" }}
     transition={{ duration: 0.5, delay, ease: [0.22, 1, 0.36, 1] }}
-    className="bg-white dark:bg-gray-800/50 rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 dark:border-gray-700/50 flex flex-col h-full group hover:translate-y-[-2px]"
+    className="bg-white dark:bg-gray-800/50 rounded-lg p-6 shadow-[0_4px_10px_-3px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_20px_-4px_rgba(0,0,0,0.08)] transition-all duration-300 border border-gray-100/80 dark:border-gray-700/30 flex flex-col h-full group hover:translate-y-[-2px]"
   >
     <div className="text-primary mb-4 opacity-85 group-hover:opacity-100 transition-opacity">
       {icon}
