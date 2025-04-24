@@ -1,20 +1,19 @@
-name: Deploy via FTP
+name: 🚧 Deploy via FTP to Hostinger
 
 on:
   push:
     branches:
-      - gh-pages
+      - static-site
 
 jobs:
   ftp-deploy:
-    name: ✨ Deploy to Hostinger via FTP
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: 📦 Checkout static-site
         uses: actions/checkout@v4
 
-      - name: Upload via FTP
+      - name: 🚜 Upload via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_HOST }}
