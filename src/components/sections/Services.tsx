@@ -114,7 +114,7 @@ export default function Services() {
             Meine Beratungsleistungen
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300">
-            Kompetente Unterstützung in den Bereichen Energie, Klima und
+            Kompetente Unterstützung in den Bereichen Energie sowie Klima und
             öffentlicher Sektor
           </p>
         </motion.div>
