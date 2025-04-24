@@ -26,7 +26,7 @@ const ServiceCard = ({ title, description, icon, delay }: ServiceCardProps) => (
     transition={{ duration: 0.5, delay, ease: [0.22, 1, 0.36, 1] }}
     className="bg-white dark:bg-gray-800/50 rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 dark:border-gray-700/50 flex flex-col h-full group hover:translate-y-[-2px]"
   >
-    <div className="text-emerald-600 dark:text-emerald-400 mb-4 opacity-85 group-hover:opacity-100 transition-opacity">
+    <div className="text-primary mb-4 opacity-85 group-hover:opacity-100 transition-opacity">
       {icon}
     </div>
     <h3 className="font-serif text-xl font-medium text-gray-900 dark:text-white/95 mb-3">

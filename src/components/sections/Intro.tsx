@@ -24,7 +24,7 @@ export default function Intro() {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="md:col-span-5 lg:col-span-6 order-1 md:order-1"
           >
-            <div className="relative h-[300px] sm:h-[400px] w-full overflow-hidden rounded-lg shadow-md">
+            <div className="relative h-[300px] sm:h-[400px] w-full overflow-hidden shadow-md rounded-lg">
               <Image
                 src="/images/sander-weeteling-iGDg_f_mlWo-unsplash.jpg"
                 alt="Nachhaltige Zukunft Visualisierung"
@@ -34,7 +34,7 @@ export default function Intro() {
                 className="transition-transform duration-500 hover:scale-105"
                 priority={false}
               />
-              <div className="absolute inset-0 bg-emerald-900/10 dark:bg-emerald-900/20" />
+              <div className="absolute inset-0 bg-primary/10" />
             </div>
           </motion.div>
 
@@ -86,7 +86,7 @@ export default function Intro() {
                 href="/ueber-mich"
                 className={clsx(
                   "inline-flex items-center group",
-                  "text-emerald-700 dark:text-emerald-400 font-medium",
+                  "text-primary font-medium",
                   "transition-all duration-300 ease-out",
                   "hover:translate-x-1",
                 )}

@@ -43,7 +43,7 @@ export default function Contact() {
               <div className="flex flex-col items-center">
                 {/* Email contact */}
                 <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-14 h-14 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-600 dark:text-emerald-400 rounded-full mb-3">
+                  <div className="inline-flex items-center justify-center w-14 h-14 border border-primary/30 bg-primary/10 text-primary rounded-full mb-3">
                     <EnvelopeSimple size={28} weight="duotone" />
                   </div>
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
@@ -55,7 +55,7 @@ export default function Contact() {
                   </p>
                   <a
                     href="mailto:sven-joachim.otto@jab.consulting"
-                    className="inline-flex items-center px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-lg shadow-sm hover:shadow transform transition-all duration-300 hover:translate-y-[-2px] focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+                    className="inline-flex items-center px-6 py-3 bg-primary hover:bg-primary text-white font-medium rounded-lg shadow-sm hover:shadow transform transition-all duration-300 hover:translate-y-[-2px] focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900"
                   >
                     <EnvelopeSimple size={20} weight="bold" className="mr-2" />
                     E-Mail schreiben

@@ -48,10 +48,7 @@ export default function NavBar({ items }: NavBarProps) {
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link
-            href="/"
-            className="text-xl font-semibold text-emerald-700 dark:text-emerald-400"
-          >
+          <Link href="/" className="text-xl font-semibold text-primary">
             JAB Consulting
           </Link>
 
@@ -64,8 +61,8 @@ export default function NavBar({ items }: NavBarProps) {
                 className={clsx(
                   "text-sm font-medium transition-colors",
                   pathname === item.href
-                    ? "text-emerald-700 dark:text-emerald-400"
-                    : "text-gray-700 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-emerald-400",
+                    ? "text-primary"
+                    : "text-gray-700 dark:text-gray-300 hover:text-primary",
                 )}
               >
                 {item.label}
@@ -79,7 +76,7 @@ export default function NavBar({ items }: NavBarProps) {
             <ThemeToggle />
             <button
               type="button"
-              className="text-gray-700 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-emerald-400"
+              className="text-gray-700 dark:text-gray-300 hover:text-primary"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             >

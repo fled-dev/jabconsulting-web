@@ -36,8 +36,8 @@ const FAQItem = ({
         onClick={toggleOpen}
         className={clsx(
           "flex justify-between items-center w-full py-5 text-left transition-colors",
-          "hover:text-emerald-700 dark:hover:text-emerald-400",
-          "focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 dark:focus-visible:ring-emerald-400",
+          "hover:text-primary",
+          "focus:outline-none focus-visible:ring-2 focus-visible:ring-primary",
         )}
       >
         <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white/90">
@@ -46,7 +46,7 @@ const FAQItem = ({
         <motion.div
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="text-emerald-600 dark:text-emerald-400 flex-shrink-0 ml-4"
+          className="text-primary flex-shrink-0 ml-4"
         >
           <CaretDown size={22} weight="bold" />
         </motion.div>
@@ -166,7 +166,7 @@ export default function FAQ() {
             Haben Sie weitere Fragen?{" "}
             <a
               href="mailto:sven-joachim.otto@jab.consulting"
-              className="text-emerald-700 dark:text-emerald-400 hover:underline font-medium"
+              className="text-primary hover:underline font-medium"
             >
               Kontaktieren Sie mich
             </a>

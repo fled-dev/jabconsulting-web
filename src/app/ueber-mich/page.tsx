@@ -72,9 +72,9 @@ export default function UeberMichPage() {
                 href="mailto:sven-joachim.otto@jab.consulting"
                 className={clsx(
                   "inline-flex items-center py-3 px-6 rounded-lg font-medium text-white",
-                  "bg-emerald-600 hover:bg-emerald-700 dark:bg-emerald-600 dark:hover:bg-emerald-700",
+                  "bg-primary hover:bg-primary",
                   "transform transition duration-200 ease-in-out",
-                  "focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900",
+                  "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900",
                 )}
               >
                 Kontakt aufnehmen
@@ -92,7 +92,7 @@ export default function UeberMichPage() {
             <h2 className="font-serif text-3xl md:text-4xl font-medium text-gray-900 dark:text-white/95 mb-4">
               Beruflicher Werdegang
             </h2>
-            <div className="h-1 w-20 bg-emerald-500 mx-auto"></div>
+            <div className="h-1 w-20 bg-primary mx-auto"></div>
           </div>
 
           <div className="prose prose-lg dark:prose-invert max-w-none">
@@ -133,7 +133,7 @@ export default function UeberMichPage() {
             <h2 className="font-serif text-3xl md:text-4xl font-medium text-gray-900 dark:text-white/95 mb-4">
               Professionelle Meilensteine
             </h2>
-            <div className="h-1 w-20 bg-emerald-500 mx-auto"></div>
+            <div className="h-1 w-20 bg-primary mx-auto"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -144,8 +144,8 @@ export default function UeberMichPage() {
               </h3>
               <ul className="space-y-4 text-gray-700 dark:text-gray-300">
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mt-0.5">
-                    <div className="h-2 w-2 rounded-full bg-emerald-500"></div>
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center mt-0.5">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
                   </div>
                   <span className="ml-3">
                     Honorarprofessor an der Ruhr-Universität Bochum für
@@ -153,8 +153,8 @@ export default function UeberMichPage() {
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mt-0.5">
-                    <div className="h-2 w-2 rounded-full bg-emerald-500"></div>
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
                   </div>
                   <span className="ml-3">
                     Regelmäßige Publikationen zu aktuellen Themen der
@@ -162,8 +162,8 @@ export default function UeberMichPage() {
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mt-0.5">
-                    <div className="h-2 w-2 rounded-full bg-emerald-500"></div>
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
                   </div>
                   <span className="ml-3">
                     Promotionen und Habilitation im Bereich des
@@ -180,8 +180,8 @@ export default function UeberMichPage() {
               </h3>
               <ul className="space-y-4 text-gray-700 dark:text-gray-300">
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mt-0.5">
-                    <div className="h-2 w-2 rounded-full bg-emerald-500"></div>
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
                   </div>
                   <span className="ml-3">
                     Partner bei einer führenden internationalen
@@ -189,8 +189,8 @@ export default function UeberMichPage() {
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mt-0.5">
-                    <div className="h-2 w-2 rounded-full bg-emerald-500"></div>
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
                   </div>
                   <span className="ml-3">
                     Beirats- und Aufsichtsratsmitglied in verschiedenen
@@ -198,8 +198,8 @@ export default function UeberMichPage() {
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mt-0.5">
-                    <div className="h-2 w-2 rounded-full bg-emerald-500"></div>
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
                   </div>
                   <span className="ml-3">
                     Strategische Beratung für Ministerien und Behörden
@@ -215,16 +215,16 @@ export default function UeberMichPage() {
               </h3>
               <ul className="space-y-4 text-gray-700 dark:text-gray-300">
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mt-0.5">
-                    <div className="h-2 w-2 rounded-full bg-emerald-500"></div>
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
                   </div>
                   <span className="ml-3">
                     Keynote Speaker zu ESG-Regulierung und Nachhaltigkeit
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mt-0.5">
-                    <div className="h-2 w-2 rounded-full bg-emerald-500"></div>
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
                   </div>
                   <span className="ml-3">
                     Regelmäßige Teilnahme an Expertenpanels zu Transformation
@@ -232,8 +232,8 @@ export default function UeberMichPage() {
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mt-0.5">
-                    <div className="h-2 w-2 rounded-full bg-emerald-500"></div>
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
                   </div>
                   <span className="ml-3">
                     Moderation von Fachveranstaltungen zu Infrastruktur und
@@ -250,8 +250,8 @@ export default function UeberMichPage() {
               </h3>
               <ul className="space-y-4 text-gray-700 dark:text-gray-300">
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mt-0.5">
-                    <div className="h-2 w-2 rounded-full bg-emerald-500"></div>
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
                   </div>
                   <span className="ml-3">
                     Beratung von politischen Entscheidungsträgern zu
@@ -259,8 +259,8 @@ export default function UeberMichPage() {
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mt-0.5">
-                    <div className="h-2 w-2 rounded-full bg-emerald-500"></div>
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
                   </div>
                   <span className="ml-3">
                     Mitwirkung bei der Entwicklung von Sustainable Finance
@@ -268,8 +268,8 @@ export default function UeberMichPage() {
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mt-0.5">
-                    <div className="h-2 w-2 rounded-full bg-emerald-500"></div>
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                    <div className="h-2 w-2 rounded-full bg-primary"></div>
                   </div>
                   <span className="ml-3">
                     Entwicklung von Public-Private-Partnership Modellen für
@@ -289,7 +289,7 @@ export default function UeberMichPage() {
             <h2 className="font-serif text-3xl md:text-4xl font-medium text-gray-900 dark:text-white/95 mb-4">
               Fachliche Expertise
             </h2>
-            <div className="h-1 w-20 bg-emerald-500 mx-auto mb-6"></div>
+            <div className="h-1 w-20 bg-primary mx-auto mb-6"></div>
             <p className="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300">
               Mein Beratungsansatz verbindet fundierte Fachkenntnisse mit
               strategischem Denken und praktischer Umsetzungskompetenz
@@ -299,9 +299,9 @@ export default function UeberMichPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* ESG & Nachhaltigkeit */}
             <div className="text-center">
-              <div className="inline-flex items-center justify-center h-20 w-20 rounded-full bg-emerald-100 dark:bg-emerald-900/30 mb-6">
+              <div className="inline-flex items-center justify-center h-20 w-20 rounded-full bg-primary/10 mb-6">
                 <svg
-                  className="h-10 w-10 text-emerald-600 dark:text-emerald-400"
+                  className="h-10 w-10 text-primary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -327,9 +327,9 @@ export default function UeberMichPage() {
 
             {/* Infrastruktur & Kapital */}
             <div className="text-center">
-              <div className="inline-flex items-center justify-center h-20 w-20 rounded-full bg-emerald-100 dark:bg-emerald-900/30 mb-6">
+              <div className="inline-flex items-center justify-center h-20 w-20 rounded-full bg-primary/10 mb-6">
                 <svg
-                  className="h-10 w-10 text-emerald-600 dark:text-emerald-400"
+                  className="h-10 w-10 text-primary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -355,9 +355,9 @@ export default function UeberMichPage() {
 
             {/* Marktanalyse & Strategie */}
             <div className="text-center">
-              <div className="inline-flex items-center justify-center h-20 w-20 rounded-full bg-emerald-100 dark:bg-emerald-900/30 mb-6">
+              <div className="inline-flex items-center justify-center h-20 w-20 rounded-full bg-primary/10 mb-6">
                 <svg
-                  className="h-10 w-10 text-emerald-600 dark:text-emerald-400"
+                  className="h-10 w-10 text-primary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -385,12 +385,12 @@ export default function UeberMichPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-20 bg-emerald-700 dark:bg-emerald-800">
+      <section className="py-16 md:py-20 bg-primary">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 text-center">
           <h2 className="font-serif text-2xl md:text-3xl font-medium text-white mb-6">
             Sie möchten mehr über meine Beratungsleistungen erfahren?
           </h2>
-          <p className="text-emerald-100 mb-8 text-lg">
+          <p className="text-white/80 mb-8 text-lg">
             Ich freue mich auf ein persönliches Gespräch, um Ihre spezifischen
             Anforderungen und Ziele zu besprechen.
           </p>
@@ -398,9 +398,9 @@ export default function UeberMichPage() {
             href="mailto:sven-joachim.otto@jab.consulting"
             className={clsx(
               "inline-flex items-center py-3 px-8 rounded-lg font-medium",
-              "bg-white text-emerald-700 hover:bg-emerald-50",
+              "bg-white text-primary",
               "transform transition duration-200 ease-in-out",
-              "focus:outline-none focus:ring-2 focus:ring-emerald-300 focus:ring-offset-2 focus:ring-offset-emerald-700",
+              "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-primary",
             )}
           >
             Kontakt aufnehmen

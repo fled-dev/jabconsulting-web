@@ -50,7 +50,7 @@ export default function About() {
           >
             <div className="relative h-[380px] sm:h-[500px] w-full overflow-hidden rounded-lg">
               {/* Decorative element */}
-              <div className="absolute -top-4 -left-4 h-24 w-24 border-l-4 border-t-4 border-emerald-600 rounded-tl-lg opacity-70 z-10" />
+              <div className="absolute -top-4 -left-4 h-24 w-24 border-l-4 border-t-4 border-primary rounded-tl-lg opacity-70 z-10" />
 
               {/* Main image */}
               <div className="relative h-full w-full shadow-lg">
@@ -67,11 +67,11 @@ export default function About() {
               </div>
 
               {/* Decorative element */}
-              <div className="absolute -bottom-4 -right-4 h-24 w-24 border-r-4 border-b-4 border-emerald-600 rounded-br-lg opacity-70" />
+              <div className="absolute -bottom-4 -right-4 h-24 w-24 border-r-4 border-b-4 border-primary rounded-br-lg opacity-70" />
 
               {/* Badge */}
               <div className="absolute top-5 right-5 bg-white/90 dark:bg-gray-800/90 px-4 py-2 rounded-full shadow-md backdrop-blur-sm">
-                <p className="text-sm font-medium text-emerald-700 dark:text-emerald-400">
+                <p className="text-sm font-medium text-primary">
                   Honorarprofessor
                 </p>
               </div>
@@ -95,8 +95,8 @@ export default function About() {
                 Prof. Dr. Sven-Joachim Otto
               </h2>
               <div className="mt-2 flex items-center">
-                <div className="h-1 w-12 bg-emerald-600 mr-3"></div>
-                <span className="text-emerald-700 dark:text-emerald-400 font-medium">
+                <div className="h-1 w-12 bg-primary mr-3"></div>
+                <span className="text-primary font-medium">
                   Energiewirtschaft & Recht
                 </span>
               </div>
@@ -166,7 +166,7 @@ export default function About() {
             >
               <Link
                 href="/ueber-mich"
-                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 dark:bg-emerald-700 dark:hover:bg-emerald-600 transition-colors"
+                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-primary hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors"
               >
                 Mehr über mich erfahren
                 <svg

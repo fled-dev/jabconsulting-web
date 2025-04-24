@@ -97,7 +97,7 @@ export default function Hero() {
                 className={clsx(
                   "inline-flex items-center justify-center px-8 py-3",
                   "bg-primary text-white font-medium text-base tracking-wide",
-                  "border border-primary",
+                  "border border-primary rounded-md",
                   "transition duration-300 ease-out",
                   "hover:bg-primary",
                   "focus:outline-none focus:ring-1 focus:ring-primary",
@@ -115,7 +115,7 @@ export default function Hero() {
                 className={clsx(
                   "inline-flex items-center justify-center px-8 py-3",
                   "bg-transparent text-primary font-medium text-base tracking-wide",
-                  "border border-primary/30",
+                  "border border-primary/30 rounded-md",
                   "transition duration-300 ease-out",
                   "hover:border-primary/70",
                   "focus:outline-none focus:ring-1 focus:ring-primary",

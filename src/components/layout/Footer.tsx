@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Information */}
           <div>
-            <h3 className="font-medium tracking-wider text-sm text-emerald-800 dark:text-emerald-400 mb-4">
+            <h3 className="font-medium tracking-wider text-sm text-primary mb-4">
               JAB CONSULTING
             </h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -25,7 +25,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/impressum"
-                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-emerald-700 dark:hover:text-emerald-400 transition duration-200"
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition duration-200"
                 >
                   Impressum
                 </Link>
@@ -33,7 +33,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/datenschutz"
-                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-emerald-700 dark:hover:text-emerald-400 transition duration-200"
+                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition duration-200"
                 >
                   Datenschutz
                 </Link>
@@ -51,7 +51,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/sven-joachim-otto/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-8 w-8 flex items-center justify-center rounded-full bg-gray-200 dark:bg-neutral-800 text-gray-700 dark:text-gray-300 hover:bg-emerald-200 dark:hover:bg-emerald-800 transition duration-200"
+                className="h-8 w-8 flex items-center justify-center rounded-full bg-gray-200 dark:bg-neutral-800 text-gray-700 dark:text-gray-300 hover:bg-primary/20 transition duration-200"
                 aria-label="LinkedIn"
               >
                 <svg
@@ -67,7 +67,7 @@ export default function Footer() {
 
               <a
                 href="mailto:sven-joachim.otto@jab.consulting"
-                className="h-8 w-8 flex items-center justify-center rounded-full bg-gray-200 dark:bg-neutral-800 text-gray-700 dark:text-gray-300 hover:bg-emerald-200 dark:hover:bg-emerald-800 transition duration-200"
+                className="h-8 w-8 flex items-center justify-center rounded-full bg-gray-200 dark:bg-neutral-800 text-gray-700 dark:text-gray-300 hover:bg-primary/20 transition duration-200"
                 aria-label="E-Mail"
               >
                 <svg
@@ -83,7 +83,7 @@ export default function Footer() {
 
               <a
                 href="tel:+492111592320"
-                className="h-8 w-8 flex items-center justify-center rounded-full bg-gray-200 dark:bg-neutral-800 text-gray-700 dark:text-gray-300 hover:bg-emerald-200 dark:hover:bg-emerald-800 transition duration-200"
+                className="h-8 w-8 flex items-center justify-center rounded-full bg-gray-200 dark:bg-neutral-800 text-gray-700 dark:text-gray-300 hover:bg-primary/20 transition duration-200"
                 aria-label="Telefon"
               >
                 <svg
