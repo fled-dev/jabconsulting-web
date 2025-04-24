@@ -1,51 +1,11 @@
-import type { Metadata } from "next";
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import clsx from "clsx";
-
-export const metadata: Metadata = {
-  title: "Über Prof. Dr. Sven-Joachim Otto | JAB Consulting GmbH",
-  description:
-    "Erfahren Sie mehr über Prof. Dr. Sven-Joachim Otto - Experte für ESG-Transformation, nachhaltige Infrastruktur und strategische Beratung. Lernen Sie seinen beruflichen Werdegang und seine Expertise kennen.",
-  keywords: [
-    "Prof. Dr. Sven-Joachim Otto",
-    "ESG-Experte",
-    "Strategieberatung",
-    "Nachhaltigkeitsberatung",
-    "Infrastrukturberatung",
-    "Nachhaltigkeit",
-    "Public Policy",
-    "Beiratsmitglied",
-    "Aufsichtsrat",
-    "Ruhr-Universität Bochum",
-  ],
-  authors: [
-    {
-      name: "Prof. Dr. Sven-Joachim Otto",
-      url: "https://www.linkedin.com/in/sven-joachim-otto/",
-    },
-  ],
-  creator: "Prof. Dr. Sven-Joachim Otto",
-  publisher: "Prof. Dr. Sven-Joachim Otto",
-  openGraph: {
-    title: "Über Prof. Dr. Sven-Joachim Otto | JAB Consulting GmbH",
-    description:
-      "Erfahren Sie mehr über Prof. Dr. Sven-Joachim Otto - Experte für ESG-Transformation, nachhaltige Infrastruktur und strategische Beratung.",
-    url: "https://jab.consulting/ueber-mich",
-    siteName: "JAB Consulting GmbH",
-    images: [
-      {
-        url: "https://jab.consulting/images/jab-banner.png",
-        width: 1200,
-        height: 630,
-        alt: "Über Prof. Dr. Sven-Joachim Otto",
-      },
-    ],
-    locale: "de_DE",
-    type: "website",
-  },
-};
+// Import specific components from framer-motion instead of framer-motion/dom
+import { motion } from "framer-motion";
 
 export default function UeberMichPage() {
   return (
@@ -66,7 +26,17 @@ export default function UeberMichPage() {
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
           <div className="flex flex-col lg:flex-row gap-12 xl:gap-16 items-center">
             {/* Image */}
-            <div className="w-full lg:w-2/5 flex justify-center lg:justify-start">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{
+                duration: 0.7,
+                delay: 0.2,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="w-full lg:w-2/5 flex justify-center lg:justify-start"
+            >
               <div className="relative h-[400px] w-[320px] sm:h-[450px] sm:w-[360px] rounded-xl overflow-hidden">
                 <Image
                   src="/images/sven-joachim-otto-2.jpeg"
@@ -78,10 +48,20 @@ export default function UeberMichPage() {
                 />
                 <div className="absolute inset-0 shadow-inner pointer-events-none border border-black/5 dark:border-white/10 rounded-xl"></div>
               </div>
-            </div>
+            </motion.div>
 
             {/* Text content */}
-            <div className="w-full lg:w-3/5">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{
+                duration: 0.7,
+                delay: 0.3,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="w-full lg:w-3/5"
+            >
               <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-medium text-gray-900 dark:text-white/95 leading-tight mb-6">
                 Über Prof. Dr. Sven-Joachim Otto
               </h1>
@@ -105,7 +85,7 @@ export default function UeberMichPage() {
                 Kontakt aufnehmen
                 <ArrowRight weight="bold" className="ml-2" size={18} />
               </Link>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -113,14 +93,26 @@ export default function UeberMichPage() {
       {/* Biography Section */}
       <section className="py-16 md:py-24 bg-white dark:bg-gray-900">
         <div className="max-w-4xl mx-auto px-6 sm:px-8">
-          <div className="mb-12 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            className="mb-12 text-center"
+          >
             <h2 className="font-serif text-3xl md:text-4xl font-medium text-gray-900 dark:text-white/95 mb-4">
               Beruflicher Werdegang
             </h2>
             <div className="h-1 w-20 bg-primary mx-auto"></div>
-          </div>
+          </motion.div>
 
-          <div className="prose prose-lg dark:prose-invert max-w-none">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            className="prose prose-lg dark:prose-invert max-w-none"
+          >
             <p>
               Meine berufliche Laufbahn ist geprägt von der Verbindung zwischen
               akademischer Expertise und praktischer Erfahrung in
@@ -147,23 +139,39 @@ export default function UeberMichPage() {
               aktueller Entwicklungen und kann diese Erkenntnisse direkt in
               meine Beratungstätigkeit einfließen lassen.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Professional Milestones */}
       <section className="py-16 md:py-24 bg-gray-50 dark:bg-gray-850">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <div className="mb-16 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            className="mb-16 text-center"
+          >
             <h2 className="font-serif text-3xl md:text-4xl font-medium text-gray-900 dark:text-white/95 mb-4">
               Professionelle Meilensteine
             </h2>
             <div className="h-1 w-20 bg-primary mx-auto"></div>
-          </div>
+          </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Academic */}
-            <div className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-[0_4px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100/80 dark:border-gray-700/30">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{
+                duration: 0.7,
+                delay: 0.2,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-[0_4px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100/80 dark:border-gray-700/30"
+            >
               <h3 className="font-serif text-xl font-medium text-gray-900 dark:text-white/95 mb-4">
                 Akademische Tätigkeit
               </h3>
@@ -196,10 +204,20 @@ export default function UeberMichPage() {
                   </span>
                 </li>
               </ul>
-            </div>
+            </motion.div>
 
             {/* Consulting & Advisory */}
-            <div className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-[0_4px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100/80 dark:border-gray-700/30">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{
+                duration: 0.7,
+                delay: 0.3,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-[0_4px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100/80 dark:border-gray-700/30"
+            >
               <h3 className="font-serif text-xl font-medium text-gray-900 dark:text-white/95 mb-4">
                 Beratung & Führungsrollen
               </h3>
@@ -231,10 +249,20 @@ export default function UeberMichPage() {
                   </span>
                 </li>
               </ul>
-            </div>
+            </motion.div>
 
             {/* Public Speaking */}
-            <div className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-[0_4px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100/80 dark:border-gray-700/30">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{
+                duration: 0.7,
+                delay: 0.4,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-[0_4px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100/80 dark:border-gray-700/30"
+            >
               <h3 className="font-serif text-xl font-medium text-gray-900 dark:text-white/95 mb-4">
                 Vorträge & Konferenzen
               </h3>
@@ -266,10 +294,20 @@ export default function UeberMichPage() {
                   </span>
                 </li>
               </ul>
-            </div>
+            </motion.div>
 
             {/* Policy Work */}
-            <div className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-[0_4px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100/80 dark:border-gray-700/30">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{
+                duration: 0.7,
+                delay: 0.5,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-[0_4px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100/80 dark:border-gray-700/30"
+            >
               <h3 className="font-serif text-xl font-medium text-gray-900 dark:text-white/95 mb-4">
                 Politik & Öffentlicher Sektor
               </h3>
@@ -302,7 +340,7 @@ export default function UeberMichPage() {
                   </span>
                 </li>
               </ul>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -310,7 +348,13 @@ export default function UeberMichPage() {
       {/* Expertise Section */}
       <section className="py-16 md:py-24 bg-white dark:bg-gray-900">
         <div className="max-w-5xl mx-auto px-6 sm:px-8">
-          <div className="mb-16 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            className="mb-16 text-center"
+          >
             <h2 className="font-serif text-3xl md:text-4xl font-medium text-gray-900 dark:text-white/95 mb-4">
               Fachliche Expertise
             </h2>
@@ -319,11 +363,21 @@ export default function UeberMichPage() {
               Mein Beratungsansatz verbindet fundierte Fachkenntnisse mit
               strategischem Denken und praktischer Umsetzungskompetenz
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* ESG & Nachhaltigkeit */}
-            <div className="text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{
+                duration: 0.7,
+                delay: 0.2,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="text-center"
+            >
               <div className="inline-flex items-center justify-center h-20 w-20 rounded-full bg-primary/10 mb-6">
                 <svg
                   className="h-10 w-10 text-primary"
@@ -348,10 +402,20 @@ export default function UeberMichPage() {
                 strategischen Integration von Nachhaltigkeitskriterien in
                 Geschäftsmodelle und Entscheidungsprozesse.
               </p>
-            </div>
+            </motion.div>
 
             {/* Infrastruktur & Kapital */}
-            <div className="text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{
+                duration: 0.7,
+                delay: 0.3,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="text-center"
+            >
               <div className="inline-flex items-center justify-center h-20 w-20 rounded-full bg-primary/10 mb-6">
                 <svg
                   className="h-10 w-10 text-primary"
@@ -376,10 +440,20 @@ export default function UeberMichPage() {
                 Kapitalbeschaffungsstrategien mit Fokus auf langfristige
                 Wertschöpfung und ökologische Verträglichkeit.
               </p>
-            </div>
+            </motion.div>
 
             {/* Marktanalyse & Strategie */}
-            <div className="text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{
+                duration: 0.7,
+                delay: 0.4,
+                ease: [0.22, 1, 0.36, 1],
+              }}
+              className="text-center"
+            >
               <div className="inline-flex items-center justify-center h-20 w-20 rounded-full bg-primary/10 mb-6">
                 <svg
                   className="h-10 w-10 text-primary"
@@ -404,7 +478,7 @@ export default function UeberMichPage() {
                 Strategien zur Positionierung im dynamischen Umfeld der
                 Nachhaltigkeitstransformation.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -412,25 +486,32 @@ export default function UeberMichPage() {
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-primary">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 text-center">
-          <h2 className="font-serif text-2xl md:text-3xl font-medium text-white mb-6">
-            Sie möchten mehr über meine Beratungsleistungen erfahren?
-          </h2>
-          <p className="text-white/80 mb-8 text-lg">
-            Ich freue mich auf ein persönliches Gespräch, um Ihre spezifischen
-            Anforderungen und Ziele zu besprechen.
-          </p>
-          <Link
-            href="mailto:sven-joachim.otto@jab.consulting"
-            className={clsx(
-              "inline-flex items-center py-3 px-8 rounded-lg font-medium",
-              "bg-white text-primary",
-              "transform transition duration-200 ease-in-out",
-              "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-primary",
-            )}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           >
-            Kontakt aufnehmen
-            <ArrowRight weight="bold" className="ml-2" size={18} />
-          </Link>
+            <h2 className="font-serif text-2xl md:text-3xl font-medium text-white mb-6">
+              Sie möchten mehr über meine Beratungsleistungen erfahren?
+            </h2>
+            <p className="text-white/80 mb-8 text-lg">
+              Ich freue mich auf ein persönliches Gespräch, um Ihre spezifischen
+              Anforderungen und Ziele zu besprechen.
+            </p>
+            <Link
+              href="mailto:sven-joachim.otto@jab.consulting"
+              className={clsx(
+                "inline-flex items-center py-3 px-8 rounded-lg font-medium",
+                "bg-white text-primary",
+                "transform transition duration-200 ease-in-out",
+                "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-primary",
+              )}
+            >
+              Kontakt aufnehmen
+              <ArrowRight weight="bold" className="ml-2" size={18} />
+            </Link>
+          </motion.div>
         </div>
       </section>
     </main>
