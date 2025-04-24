@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "JAB Consulting GmbH",
     images: [
       {
-        url: "https://jab.consulting/images/sven-joachim-otto-2.jpeg",
+        url: "https://jab.consulting/images/jab-banner.png",
         width: 1200,
         height: 630,
         alt: "JAB Consulting – Nachhaltige Strategieberatung für ESG, Infrastruktur & Kapital",

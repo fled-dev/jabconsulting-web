@@ -20,6 +20,31 @@ export const metadata: Metadata = {
     "Aufsichtsrat",
     "Ruhr-Universität Bochum",
   ],
+  authors: [
+    {
+      name: "Prof. Dr. Sven-Joachim Otto",
+      url: "https://www.linkedin.com/in/sven-joachim-otto/",
+    },
+  ],
+  creator: "Prof. Dr. Sven-Joachim Otto",
+  publisher: "Prof. Dr. Sven-Joachim Otto",
+  openGraph: {
+    title: "Über Prof. Dr. Sven-Joachim Otto | JAB Consulting GmbH",
+    description:
+      "Erfahren Sie mehr über Prof. Dr. Sven-Joachim Otto - Experte für ESG-Transformation, nachhaltige Infrastruktur und strategische Beratung.",
+    url: "https://jab.consulting/ueber-mich",
+    siteName: "JAB Consulting GmbH",
+    images: [
+      {
+        url: "https://jab.consulting/images/jab-banner.png",
+        width: 1200,
+        height: 630,
+        alt: "Über Prof. Dr. Sven-Joachim Otto",
+      },
+    ],
+    locale: "de_DE",
+    type: "website",
+  },
 };
 
 export default function UeberMichPage() {
@@ -144,7 +169,7 @@ export default function UeberMichPage() {
               </h3>
               <ul className="space-y-4 text-gray-700 dark:text-gray-300">
                 <li className="flex items-start">
-                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center mt-0.5">
+                  <div className="flex-shrink-0 h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
                     <div className="h-2 w-2 rounded-full bg-primary"></div>
                   </div>
                   <span className="ml-3">
