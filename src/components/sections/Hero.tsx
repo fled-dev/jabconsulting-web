@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       aria-label="Hero"
-      className="relative min-h-[82vh] flex items-center justify-center overflow-hidden"
+      className="relative min-h-[82vh] flex items-center justify-center overflow-hidden pt-36 md:pt-32"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 -z-10" />
