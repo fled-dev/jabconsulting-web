@@ -1,17 +1,21 @@
 name: 🚧 Deploy via FTP to Hostinger
 
 on:
-  push:
-    branches:
-      - static-site
+  workflow_run:
+    workflows: ["Build Static Site"]
+    types:
+      - completed
 
 jobs:
   ftp-deploy:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
     steps:
       - name: 📦 Checkout static-site
         uses: actions/checkout@v4
+        with:
+          ref: static-site
 
       - name: 🚜 Upload via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
