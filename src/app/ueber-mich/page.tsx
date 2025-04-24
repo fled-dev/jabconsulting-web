@@ -138,7 +138,7 @@ export default function UeberMichPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             {/* Academic */}
-            <div className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-sm">
+            <div className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-[0_4px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100/80 dark:border-gray-700/30">
               <h3 className="font-serif text-xl font-medium text-gray-900 dark:text-white/95 mb-4">
                 Akademische Tätigkeit
               </h3>
@@ -174,7 +174,7 @@ export default function UeberMichPage() {
             </div>
 
             {/* Consulting & Advisory */}
-            <div className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-sm">
+            <div className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-[0_4px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100/80 dark:border-gray-700/30">
               <h3 className="font-serif text-xl font-medium text-gray-900 dark:text-white/95 mb-4">
                 Beratung & Führungsrollen
               </h3>
@@ -209,7 +209,7 @@ export default function UeberMichPage() {
             </div>
 
             {/* Public Speaking */}
-            <div className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-sm">
+            <div className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-[0_4px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100/80 dark:border-gray-700/30">
               <h3 className="font-serif text-xl font-medium text-gray-900 dark:text-white/95 mb-4">
                 Vorträge & Konferenzen
               </h3>
@@ -244,7 +244,7 @@ export default function UeberMichPage() {
             </div>
 
             {/* Policy Work */}
-            <div className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-sm">
+            <div className="bg-white dark:bg-gray-800/50 p-8 rounded-xl shadow-[0_4px_10px_-3px_rgba(0,0,0,0.05)] border border-gray-100/80 dark:border-gray-700/30">
               <h3 className="font-serif text-xl font-medium text-gray-900 dark:text-white/95 mb-4">
                 Politik & Öffentlicher Sektor
               </h3>
