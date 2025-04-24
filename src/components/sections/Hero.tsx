@@ -26,20 +26,20 @@ export default function Hero() {
       />
 
       {/* Radial Gradient */}
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-[radial-gradient(circle_at_50%_30%,rgba(0,66,37,0.05),transparent_60%)] dark:bg-[radial-gradient(circle_at_50%_30%,rgba(0,66,37,0.03),transparent_60%)] -z-10" />
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-[radial-gradient(circle_at_50%_30%,rgba(4,120,87,0.05),transparent_60%)] dark:bg-[radial-gradient(circle_at_50%_30%,rgba(4,120,87,0.03),transparent_60%)] -z-10" />
 
       {/* Animated Accent Elements */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.7 }}
         transition={{ duration: 2, delay: 1 }}
-        className="absolute right-[5%] top-1/3 w-64 h-64 rounded-full bg-primary/10 dark:bg-primary/5 blur-3xl -z-10"
+        className="absolute right-[5%] top-1/3 w-64 h-64 rounded-full bg-emerald-100/10 dark:bg-emerald-700/5 blur-3xl -z-10"
       />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.6 }}
         transition={{ duration: 2, delay: 1.5 }}
-        className="absolute left-[10%] bottom-1/4 w-72 h-72 rounded-full bg-primary/10 dark:bg-primary/5 blur-3xl -z-10"
+        className="absolute left-[10%] bottom-1/4 w-72 h-72 rounded-full bg-emerald-50/20 dark:bg-emerald-800/5 blur-3xl -z-10"
       />
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 w-full relative pb-32">
@@ -56,7 +56,7 @@ export default function Hero() {
               }}
             >
               <h1 className="font-serif text-3xl md:text-4xl font-medium text-gray-900 dark:text-white/95 leading-tight">
-                <span className="block mb-2 text-primary dark:text-primary/80 uppercase tracking-widest text-sm font-sans font-medium">
+                <span className="block mb-2 text-emerald-700 dark:text-emerald-400 uppercase tracking-widest text-sm font-sans font-medium">
                   JAB Consulting
                 </span>
                 Nachhaltige Lösungen
@@ -95,13 +95,13 @@ export default function Hero() {
               <Link
                 href="/kontakt"
                 className={clsx(
-                  "inline-flex items-center justify-center px-6 py-3",
-                  "bg-primary text-white font-medium text-base tracking-wide",
-                  "border border-primary",
+                  "inline-flex items-center justify-center px-8 py-3",
+                  "bg-emerald-800 dark:bg-emerald-700 text-white font-medium text-base tracking-wide",
+                  "border border-emerald-900 dark:border-emerald-600",
                   "transition duration-300 ease-out",
-                  "hover:bg-primary/90",
-                  "focus:outline-none focus:ring-1 focus:ring-primary/70",
-                  "relative overflow-hidden group rounded-md",
+                  "hover:bg-emerald-700 dark:hover:bg-emerald-600",
+                  "focus:outline-none focus:ring-1 focus:ring-emerald-600 dark:focus:ring-emerald-400",
+                  "relative overflow-hidden group",
                   "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent",
                   "before:translate-x-[-100%] before:opacity-0 hover:before:translate-x-[100%] hover:before:opacity-100",
                   "before:transition-all before:duration-700 before:ease-out",
@@ -113,13 +113,13 @@ export default function Hero() {
               <Link
                 href="/ueber-mich"
                 className={clsx(
-                  "inline-flex items-center justify-center px-6 py-3",
-                  "bg-transparent text-primary dark:text-primary/90 font-medium text-base tracking-wide",
-                  "border border-primary/60 dark:border-primary/60",
+                  "inline-flex items-center justify-center px-8 py-3",
+                  "bg-transparent text-emerald-900 dark:text-emerald-100 font-medium text-base tracking-wide",
+                  "border border-emerald-800/30 dark:border-emerald-400/30",
                   "transition duration-300 ease-out",
-                  "hover:bg-primary/5 hover:border-primary",
-                  "focus:outline-none focus:ring-1 focus:ring-primary/70",
-                  "rounded-md",
+                  "hover:border-emerald-800/70 dark:hover:border-emerald-400/70",
+                  "focus:outline-none focus:ring-1 focus:ring-emerald-600 dark:focus:ring-emerald-400",
+                  "backdrop-blur-[2px]",
                 )}
               >
                 <span>Über mich</span>
