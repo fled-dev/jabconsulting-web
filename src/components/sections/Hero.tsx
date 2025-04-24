@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       aria-label="Hero"
-      className="relative min-h-[85vh] flex items-center overflow-hidden"
+      className="relative min-h-[82vh] flex items-center justify-center overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 -z-10" />
@@ -26,26 +26,26 @@ export default function Hero() {
       />
 
       {/* Radial Gradient */}
-      <div className="absolute top-0 left-0 right-0 bottom-0 bg-[radial-gradient(circle_at_50%_30%,rgba(4,120,87,0.05),transparent_60%)] dark:bg-[radial-gradient(circle_at_50%_30%,rgba(4,120,87,0.03),transparent_60%)] -z-10" />
+      <div className="absolute top-0 left-0 right-0 bottom-0 bg-[radial-gradient(circle_at_50%_30%,var(--primary-color-light)/5%,transparent_60%)] dark:bg-[radial-gradient(circle_at_50%_30%,var(--primary-color-light)/3%,transparent_60%)] -z-10" />
 
       {/* Animated Accent Elements */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.7 }}
         transition={{ duration: 2, delay: 1 }}
-        className="absolute right-[5%] top-1/3 w-64 h-64 rounded-full bg-emerald-100/10 dark:bg-emerald-700/5 blur-3xl -z-10"
+        className="absolute right-[5%] top-1/3 w-64 h-64 rounded-full bg-primary/10 blur-3xl -z-10"
       />
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.6 }}
         transition={{ duration: 2, delay: 1.5 }}
-        className="absolute left-[10%] bottom-1/4 w-72 h-72 rounded-full bg-emerald-50/20 dark:bg-emerald-800/5 blur-3xl -z-10"
+        className="absolute left-[10%] bottom-1/4 w-72 h-72 rounded-full bg-primary/20 blur-3xl -z-10"
       />
 
-      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 w-full relative pb-32">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-y-4 relative z-10">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 w-full relative flex flex-col justify-center h-full">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 relative z-10">
           {/* Content Area */}
-          <div className="md:col-span-7 lg:col-span-6 pt-16 md:pt-20 lg:pt-16 md:pr-8">
+          <div className="md:col-span-7 lg:col-span-6 flex flex-col justify-center md:pr-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -56,7 +56,7 @@ export default function Hero() {
               }}
             >
               <h1 className="font-serif text-3xl md:text-4xl font-medium text-gray-900 dark:text-white/95 leading-tight">
-                <span className="block mb-2 text-emerald-700 dark:text-emerald-400 uppercase tracking-widest text-sm font-sans font-medium">
+                <span className="block mb-2 text-primary uppercase tracking-widest text-sm font-sans font-medium">
                   JAB Consulting
                 </span>
                 Nachhaltige Lösungen
@@ -93,14 +93,14 @@ export default function Hero() {
               className="mt-8 flex flex-col sm:flex-row gap-4"
             >
               <Link
-                href="/kontakt"
+                href="#contact"
                 className={clsx(
                   "inline-flex items-center justify-center px-8 py-3",
-                  "bg-emerald-800 dark:bg-emerald-700 text-white font-medium text-base tracking-wide",
-                  "border border-emerald-900 dark:border-emerald-600",
+                  "bg-primary text-white font-medium text-base tracking-wide",
+                  "border border-primary",
                   "transition duration-300 ease-out",
-                  "hover:bg-emerald-700 dark:hover:bg-emerald-600",
-                  "focus:outline-none focus:ring-1 focus:ring-emerald-600 dark:focus:ring-emerald-400",
+                  "hover:bg-primary",
+                  "focus:outline-none focus:ring-1 focus:ring-primary",
                   "relative overflow-hidden group",
                   "before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent",
                   "before:translate-x-[-100%] before:opacity-0 hover:before:translate-x-[100%] hover:before:opacity-100",
@@ -114,11 +114,11 @@ export default function Hero() {
                 href="/ueber-mich"
                 className={clsx(
                   "inline-flex items-center justify-center px-8 py-3",
-                  "bg-transparent text-emerald-900 dark:text-emerald-100 font-medium text-base tracking-wide",
-                  "border border-emerald-800/30 dark:border-emerald-400/30",
+                  "bg-transparent text-primary font-medium text-base tracking-wide",
+                  "border border-primary/30",
                   "transition duration-300 ease-out",
-                  "hover:border-emerald-800/70 dark:hover:border-emerald-400/70",
-                  "focus:outline-none focus:ring-1 focus:ring-emerald-600 dark:focus:ring-emerald-400",
+                  "hover:border-primary/70",
+                  "focus:outline-none focus:ring-1 focus:ring-primary",
                   "backdrop-blur-[2px]",
                 )}
               >
@@ -151,7 +151,7 @@ export default function Hero() {
           </div>
 
           {/* Image Area - Positioned at bottom */}
-          <div className="md:col-span-5 lg:col-span-6 md:absolute md:-bottom-16 lg:-bottom-24 md:right-0 w-full md:w-1/2 lg:w-5/12">
+          <div className="md:col-span-5 lg:col-span-6 md:absolute md:-bottom-12 lg:-bottom-20 md:right-0 w-full md:w-1/2 lg:w-6/12">
             <motion.div
               style={{ y: imageParallax }}
               className="relative h-[55vh] md:h-[65vh] w-full"
@@ -170,8 +170,8 @@ export default function Hero() {
                   src="/images/sven-joachim-otto-1.png"
                   alt="JAB Consulting Profile"
                   fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-contain object-bottom"
+                  sizes="(max-width: 768px) 100vw, 60vw"
+                  className="object-contain object-center md:object-center lg:object-center"
                   priority
                 />
 
