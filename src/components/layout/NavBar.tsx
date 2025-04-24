@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { List, X } from "@phosphor-icons/react";
 import clsx from "clsx";
+import { motion, AnimatePresence } from "framer-motion";
 import ThemeToggle from "./ThemeToggle";
 
 type NavItem = {
@@ -86,27 +87,38 @@ export default function NavBar({ items }: NavBarProps) {
         </div>
       </div>
 
-      {/* Mobile menu */}
-      {isMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-900 shadow-lg">
-          <div className="px-6 py-4 space-y-2">
-            {items.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={clsx(
-                  "block py-2 text-base font-medium transition-colors",
-                  pathname === item.href
-                    ? "text-emerald-700 dark:text-emerald-400"
-                    : "text-gray-700 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-emerald-400",
-                )}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
+      {/* Mobile menu with animations */}
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            className="md:hidden bg-white dark:bg-gray-900 shadow-lg overflow-hidden"
+            initial={{ opacity: 0, height: 0, y: -10 }}
+            animate={{ opacity: 1, height: "auto", y: 0 }}
+            exit={{ opacity: 0, height: 0, y: -10 }}
+            transition={{
+              duration: 0.3,
+              ease: [0.22, 1, 0.36, 1],
+            }}
+          >
+            <div className="px-6 py-4 space-y-2">
+              {items.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={clsx(
+                    "block py-2 text-base font-medium transition-colors",
+                    pathname === item.href
+                      ? "text-emerald-700 dark:text-emerald-400"
+                      : "text-gray-700 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-emerald-400",
+                  )}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
