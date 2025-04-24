@@ -26,7 +26,7 @@ export default function UeberMichPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative pt-24 md:pt-32 pb-16 md:pb-20 bg-gray-50 dark:bg-gray-850 overflow-hidden">
+      <section className="relative pt-36 md:pt-32 pb-16 md:pb-20 bg-gray-50 dark:bg-gray-850 overflow-hidden">
         {/* Background gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800/80 -z-10" />
 
