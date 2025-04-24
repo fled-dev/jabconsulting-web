@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function DatenschutzPage() {
   return (
-    <div className="max-w-3xl mx-auto px-6 sm:px-8 py-16 md:py-24">
+    <div className="max-w-3xl mx-auto px-6 sm:px-8 pt-24 pb-16 md:pt-28 md:py-24">
       <h1 className="font-serif text-3xl md:text-4xl font-medium text-gray-900 dark:text-white/95 mb-10">
         Datenschutzerklärung
       </h1>
@@ -62,7 +62,48 @@ export default function DatenschutzPage() {
 
       <section className="mb-8">
         <h2 className="text-lg font-medium text-gray-900 dark:text-white/90 mb-3">
-          3. Datenverarbeitung bei Kontaktaufnahme
+          3. Cloudflare (Content Delivery Network)
+        </h2>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
+          Wir verwenden zur Absicherung und Optimierung der Ladezeiten unserer
+          Website Dienste der Cloudflare Inc., 101 Townsend St, San Francisco,
+          CA 94107, USA. Dabei fungiert Cloudflare als Reverse Proxy und
+          verarbeitet dabei regelmäßig folgende Daten:
+        </p>
+        <ul className="list-disc pl-5 mb-4 text-gray-700 dark:text-gray-300 space-y-1">
+          <li>IP-Adresse des Besuchers,</li>
+          <li>Browsertyp und -version,</li>
+          <li>Informationen zum Betriebssystem,</li>
+          <li>Referrer-URL,</li>
+          <li>sowie Zeitstempel des Zugriffs.</li>
+        </ul>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
+          Diese Daten werden aus Gründen der IT-Sicherheit und
+          Performanceoptimierung verarbeitet. Cloudflare betreibt Server
+          weltweit, u. a. in der EU. Eine Übertragung personenbezogener Daten in
+          die USA kann nicht ausgeschlossen werden.
+        </p>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
+          Cloudflare verpflichtet sich zur Einhaltung des EU-Datenschutzniveaus
+          über EU-Standardvertragsklauseln (Art. 46 Abs. 2 lit. c DSGVO).
+        </p>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
+          Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
+          sicherem und effizientem Betrieb der Website).
+        </p>
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
+          Unsere Website verwendet sicherheitsrelevante Cookies von Cloudflare
+          (z. B. __cf_bm), um die Integrität und Verfügbarkeit der Website zu
+          gewährleisten. Diese Cookies sind technisch erforderlich und dienen
+          ausschließlich dem Schutz der Website vor Missbrauch und Angriffen.
+          Eine Einwilligung des Nutzers ist hierfür gemäß § 25 Abs. 2 TTDSG
+          nicht erforderlich.
+        </p>
+      </section>
+
+      <section className="mb-8">
+        <h2 className="text-lg font-medium text-gray-900 dark:text-white/90 mb-3">
+          4. Datenverarbeitung bei Kontaktaufnahme
         </h2>
         <p className="text-gray-700 dark:text-gray-300 mb-4">
           Wenn Sie uns per E-Mail, Telefon, Fax oder Post kontaktieren,
@@ -79,18 +120,20 @@ export default function DatenschutzPage() {
 
       <section className="mb-8">
         <h2 className="text-lg font-medium text-gray-900 dark:text-white/90 mb-3">
-          4. Keine Cookies oder Tracking
+          5. Cookies und Tracking
         </h2>
         <p className="text-gray-700 dark:text-gray-300 mb-4">
-          Beim Besuch dieser Website werden keine Cookies gesetzt, und es findet
-          kein Tracking statt. Es werden auch keine Analyse-Tools wie Google
-          Analytics oder ähnliche Dienste verwendet.
+          Diese Website verwendet ausschließlich technisch notwendige Cookies
+          von Cloudflare zum Schutz vor Missbrauch und Angriffen. Darüber hinaus
+          werden keine weiteren Cookies gesetzt und es findet kein Tracking
+          statt. Es werden auch keine Analyse-Tools wie Google Analytics oder
+          ähnliche Dienste verwendet.
         </p>
       </section>
 
       <section className="mb-8">
         <h2 className="text-lg font-medium text-gray-900 dark:text-white/90 mb-3">
-          5. Keine eingebetteten Inhalte oder Social Plugins
+          6. Keine eingebetteten Inhalte oder Social Plugins
         </h2>
         <p className="text-gray-700 dark:text-gray-300 mb-4">
           Auf dieser Website werden keine eingebetteten Drittinhalte (wie
@@ -103,7 +146,7 @@ export default function DatenschutzPage() {
 
       <section className="mb-8">
         <h2 className="text-lg font-medium text-gray-900 dark:text-white/90 mb-3">
-          6. Ihre Rechte als betroffene Person
+          7. Ihre Rechte als betroffene Person
         </h2>
         <p className="text-gray-700 dark:text-gray-300 mb-4">
           Sie haben gemäß DSGVO folgende Rechte:
