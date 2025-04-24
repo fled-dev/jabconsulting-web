@@ -64,13 +64,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const navItems = [
+    { label: "Start", href: "/" },
+    { label: "Über mich", href: "/ueber-mich" },
+    { label: "Impressum", href: "/impressum" },
+    { label: "Datenschutz", href: "/datenschutz" },
+  ];
+
   return (
-    <html lang="en">
+    <html lang="de" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100`}
       >
-        <NavBar />
-        <div className="flex-grow">{children}</div>
+        <NavBar items={navItems} />
+        {children}
         <Footer />
       </body>
     </html>
