@@ -1,4 +1,4 @@
-name: Deploy to Hostinger
+name: 🚧 Deploy via FTP to Hostinger
 
 on:
   workflow_run:
@@ -12,20 +12,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout static-site branch
+      - name: 📦 Checkout static-site
         uses: actions/checkout@v4
         with:
           ref: static-site
 
-      - name: List contents for debug
-        run: ls -la ./out/
-
-      - name: Upload to FTP
+      - name: 🚜 Upload via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./out/
-          server-dir: /public_html/
+          local-dir: ./
+          server-dir: ${{ secrets.FTP_TARGET_DIR }}/
           dangerous-clean-slate: true
