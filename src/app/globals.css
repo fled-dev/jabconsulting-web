@@ -50,7 +50,7 @@ section.bg-primary:hover {
 }
 
 /* Keep hover effect for buttons and interactive elements */
-a.bg-primary:hover, 
+a.bg-primary:hover,
 button.bg-primary:hover {
   background-color: var(--primary-color-light) !important;
 }
@@ -74,23 +74,23 @@ button.bg-primary:hover {
   .text-primary {
     color: var(--primary-color) !important;
   }
-  
+
   .text-primary:hover {
     color: var(--primary-color-light) !important;
   }
-  
+
   .bg-primary {
     background-color: var(--primary-color) !important;
   }
-  
+
   .bg-primary:hover {
     background-color: var(--primary-color-light) !important;
   }
-  
+
   .border-primary {
     border-color: var(--primary-color) !important;
   }
-  
+
   .border-primary:hover {
     border-color: var(--primary-color-light) !important;
   }
