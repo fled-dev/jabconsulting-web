@@ -26,12 +26,14 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm run build
+        run: |
+          pnpm run build
+          pnpm run export
 
       - name: Deploy to static-site branch
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: static-site
-          publish_dir: .next/out
+          publish_dir: ./out
           force_orphan: true
