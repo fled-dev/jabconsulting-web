@@ -1,0 +1,14 @@
+LICENSE
+
+Copyright (c) 2025 JAB Consulting GmbH
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this project and associated documentation files (the "Project"), to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Project, subject to the following conditions:
+
+1. Branding and Proprietary Content
+This license does not grant permission to use proprietary content such as company logos, brand names, product names, photographs of persons, or any other branding materials of JAB Consulting GmbH. These assets are protected and may not be copied, reproduced, modified, distributed, or otherwise used without explicit written permission from JAB Consulting GmbH.
+
+2. Inspiration and Code Use
+You are allowed to study the code structure, components, and general architecture of the Project for private or commercial purposes and create derivative works based on it, excluding proprietary branding assets.
+
+3. No Warranty
+THE PROJECT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY.
