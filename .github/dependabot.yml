@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    # Open PRs for every NextJS update
+    allow:
+      - dependency-name: "next"
+      - dependency-name: "eslint-config-next"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "nextjs"
